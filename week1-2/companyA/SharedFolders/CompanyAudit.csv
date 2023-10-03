@@ -1,0 +1,91 @@
+.:
+total 4
+drwxr-xr-x 9 root     root      155 Sep 28 12:58 .
+drwx------ 4 ec2-user ec2-user  105 Sep 28 12:58 ..
+drwxr-xr-x 2 root     root       30 Sep 28 12:58 .CEO
+drwxr-xr-x 2 root     root        6 Sep 28 12:58 CEO
+drwxr-xr-x 2 root     root        6 Sep 28 12:58 Documents
+drwxr-xr-x 2 root     root        6 Sep 28 12:58 Employees
+#####.csv
+drwxr-xr-x 6 root     root       72 Sep 28 12:58 HR
+drwxr-xr-x 2 root     root        6 Sep 28 12:58 Management
+#####.csv
+drwxr-xr-x 2 root     root       45 Sep 28 12:58 SharedFolders
+
+./.CEO:
+total 0
+drwxr-xr-x 2 root root  30 Sep 28 12:58 .
+drwxr-xr-x 9 root root 155 Sep 28 12:58 ..
+#####.csv
+
+./CEO:
+total 0
+drwxr-xr-x 2 root root   6 Sep 28 12:58 .
+drwxr-xr-x 9 root root 155 Sep 28 12:58 ..
+
+./Documents:
+total 0
+drwxr-xr-x 2 root root   6 Sep 28 12:58 .
+drwxr-xr-x 9 root root 155 Sep 28 12:58 ..
+
+./Employees:
+total 0
+drwxr-xr-x 2 root root   6 Sep 28 12:58 .
+drwxr-xr-x 9 root root 155 Sep 28 12:58 ..
+
+./HR:
+total 0
+drwxr-xr-x 6 root root  72 Sep 28 12:58 .
+drwxr-xr-x 9 root root 155 Sep 28 12:58 ..
+drwxr-xr-x 2 root root  84 Sep 28 12:58 Employees
+drwxr-xr-x 2 root root 105 Sep 28 12:58 Finance
+drwxr-xr-x 2 root root 140 Sep 28 12:58 Management
+drwxr-xr-x 2 root root  52 Sep 28 12:58 NewHires
+
+./HR/Employees:
+total 0
+drwxr-xr-x 2 root root 84 Sep 28 12:58 .
+drwxr-xr-x 6 root root 72 Sep 28 12:58 ..
+#####.csv
+#####.csv
+#####.csv
+
+./HR/Finance:
+total 0
+drwxr-xr-x 2 root root 105 Sep 28 12:58 .
+drwxr-xr-x 6 root root  72 Sep 28 12:58 ..
+#####.csv
+#####.csv
+#####.csv
+#####.csv
+
+./HR/Management:
+total 0
+drwxr-xr-x 2 root root 140 Sep 28 12:58 .
+drwxr-xr-x 6 root root  72 Sep 28 12:58 ..
+#####.csv
+#####.csv
+#####.csv
+#####.csv
+#####.csv
+#####.csv
+#####.csv
+
+./HR/NewHires:
+total 0
+drwxr-xr-x 2 root root 52 Sep 28 12:58 .
+drwxr-xr-x 6 root root 72 Sep 28 12:58 ..
+#####.csv
+#####.csv
+
+./Management:
+total 0
+drwxr-xr-x 2 root root   6 Sep 28 12:58 .
+drwxr-xr-x 9 root root 155 Sep 28 12:58 ..
+
+./SharedFolders:
+total 4
+drwxr-xr-x 2 root root  45 Sep 28 12:58 .
+drwxr-xr-x 9 root root 155 Sep 28 12:58 ..
+#####.csv
+#####.csv

@@ -1,0 +1,84 @@
+.:
+total 0
+drwxr-xr-x 8 root     root     143 Sep 28 12:58 .
+drwx------ 4 ec2-user ec2-user 105 Sep 28 12:58 ..
+drwxr-xr-x 2 root     root       6 Sep 28 12:58 CEO
+drwxr-xr-x 2 root     root       6 Sep 28 12:58 Documents
+drwxr-xr-x 2 root     root       6 Sep 28 12:58 Employees
+-rw-r--r-- 1 root     root       0 Sep 28 12:58 FolderListing.csv
+drwxr-xr-x 6 root     root      72 Sep 28 12:58 HR
+drwxr-xr-x 2 root     root       6 Sep 28 12:58 Management
+-rw-r--r-- 1 root     root       0 Sep 28 12:58 Roster.csv
+drwxr-xr-x 2 root     root      45 Sep 28 12:58 SharedFolders
+
+./CEO:
+total 0
+drwxr-xr-x 2 root root   6 Sep 28 12:58 .
+drwxr-xr-x 8 root root 143 Sep 28 12:58 ..
+
+./Documents:
+total 0
+drwxr-xr-x 2 root root   6 Sep 28 12:58 .
+drwxr-xr-x 8 root root 143 Sep 28 12:58 ..
+
+./Employees:
+total 0
+drwxr-xr-x 2 root root   6 Sep 28 12:58 .
+drwxr-xr-x 8 root root 143 Sep 28 12:58 ..
+
+./HR:
+total 0
+drwxr-xr-x 6 root root  72 Sep 28 12:58 .
+drwxr-xr-x 8 root root 143 Sep 28 12:58 ..
+drwxr-xr-x 2 root root  84 Sep 28 12:58 Employees
+drwxr-xr-x 2 root root 105 Sep 28 12:58 Finance
+drwxr-xr-x 2 root root 140 Sep 28 12:58 Management
+drwxr-xr-x 2 root root  52 Sep 28 12:58 NewHires
+
+./HR/Employees:
+total 0
+drwxr-xr-x 2 root root 84 Sep 28 12:58 .
+drwxr-xr-x 6 root root 72 Sep 28 12:58 ..
+-rw-r--r-- 1 root root  0 Sep 28 12:58 Layoffs.csv
+-rw-r--r-- 1 root root  0 Sep 28 12:58 MonthlyAssessments.csv
+-rw-r--r-- 1 root root  0 Sep 28 12:58 YearlyAssessments.csv
+
+./HR/Finance:
+total 0
+drwxr-xr-x 2 root root 105 Sep 28 12:58 .
+drwxr-xr-x 6 root root  72 Sep 28 12:58 ..
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Hourly.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 IncomeGeneration.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 ProfitAndLossStatements.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Salary.csv
+
+./HR/Management:
+total 0
+drwxr-xr-x 2 root root 140 Sep 28 12:58 .
+drwxr-xr-x 6 root root  72 Sep 28 12:58 ..
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Losses.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Managers.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Orders.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Profits.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Repairs.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Schedule.csv
+-rw-r--r-- 1 root root   0 Sep 28 12:58 Sections.csv
+
+./HR/NewHires:
+total 0
+drwxr-xr-x 2 root root 52 Sep 28 12:58 .
+drwxr-xr-x 6 root root 72 Sep 28 12:58 ..
+-rw-r--r-- 1 root root  0 Sep 28 12:58 Assessments.csv
+-rw-r--r-- 1 root root  0 Sep 28 12:58 TrialPeriod.csv
+
+./Management:
+total 0
+drwxr-xr-x 2 root root   6 Sep 28 12:58 .
+drwxr-xr-x 8 root root 143 Sep 28 12:58 ..
+
+./SharedFolders:
+total 4
+drwxr-xr-x 2 root root  45 Sep 28 12:58 .
+drwxr-xr-x 8 root root 143 Sep 28 12:58 ..
+-rw-r--r-- 1 root root   0 Sep 28 12:58 logins.csv
+-rw-r--r-- 1 root root 319 Sep 28 12:58 processes.csv

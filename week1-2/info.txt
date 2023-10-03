@@ -1,0 +1,8 @@
+ 14:40:36 up  4:23,  0 users,  load average: 0.00, 0.00, 0.00
+atesh
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:a7:31:45 brd ff:ff:ff:ff:ff:ff
+    inet 172.29.130.131/20 brd 172.29.143.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fea7:3145/64 scope link 
+       valid_lft forever preferred_lft forever
