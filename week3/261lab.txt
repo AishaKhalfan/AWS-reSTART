@@ -1,0 +1,20 @@
+instance A
+
+Private IPv4 addresses 10.0.10.61
+
+INSTANCE B
+Public IPv4 address 54.190.186.112
+Private IPv4 addresses 10.0.10.192
+
+
+INSTANCE A doesnt have a public IP address
+
+
+Type yes when prompted to allow the first connection to this remote SSH server.
+Because you are using a key pair for authentication, you will not be prompted for a password.
+
+
+Question - Were you able to use the SSH to connect to both instances? Why or why not?
+
+Answer: If you were not able to connect to instance A, it was due to this instance being assigned only a private IP address. Private IP addresses cannot be accessed from outside the VPC. This is why you are only able to connect to instance B. Instance B has a public IP address assigned to it allowing access from outside the VPC, which allows you to use the SSH utility to connect to the instance.
+The customer asked for your insight regarding using a public CIDR for a new VPC that she would like to launch. Refer to module 4 and gather some evidence and summarize a short explanation of your findings to explain to the customer why or why not you recommend this approach.
