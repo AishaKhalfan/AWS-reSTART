@@ -17,13 +17,13 @@ After completing this lab, you should be able to:
 - Use the **DROP** statement to delete databases and tables
 
 When you start the lab, the following resources are already created for you:
-[img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/architecture-start.jpg)
+![img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/architecture-start.jpg)
 An instance with a database client installed
 
 A database client is installed on an instance.
 
 At the end of this lab, you will have completed some common database and table operations:
-[img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/architecture-end.jpg)
+![img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/architecture-end.jpg)
 
 A lab user connects to a database instance and queries the world database.
 A lab user creates a database and tables. Other displayed statements are SHOW, ALTER, and DROP.
@@ -131,7 +131,7 @@ CREATE DATABASE world;
 ```
 
 14. To verify that the world database has been created, run the following query. 
-[!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show.PNG)
+![img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show.PNG)
 ```SQL
 SHOW DATABASES;
 ```
@@ -156,7 +156,7 @@ CREATE TABLE world.country (
   PRIMARY KEY (`Code`)
 );
 ```
-[!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/create_country.PNG)
+![!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/create_country.PNG)
 
 16. To verify that the **country** table was created, use the **SHOW TABLES**; command to list the tables in the database. You use the **USE** command to specify which database to run a query against. Run the following commands in your terminal. 
 ```SQL
@@ -170,7 +170,7 @@ SHOW TABLES;
 SHOW COLUMNS FROM world.country;
 ```
 **Note**: Notice that the Continent column is spelled incorrectly as Conitinent. 
-[!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show_columns_country.PNG)
+![!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show_columns_country.PNG)
 18. The **ALTER TABLE** command is used to alter the table's schema. To fix the incorrectly spelled Continent column, run the following command.
 
 ```SQL
