@@ -120,7 +120,7 @@ In this task, you create a database named world and a table named **country**. Y
 12. To show the existing databases, run the following query. 
 
 ```SHOW DATABASES;```
-[!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show.PNG)
+![img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show.PNG)
 
 To determine the available database and to ensure that you are working with the correct database instance, use the **SHOW DATABASES**; command. 
 
@@ -170,13 +170,13 @@ SHOW TABLES;
 SHOW COLUMNS FROM world.country;
 ```
 **Note**: Notice that the Continent column is spelled incorrectly as Conitinent. 
-![!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show_columns_country.PNG)
+![img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show_columns_country.PNG)
 18. The **ALTER TABLE** command is used to alter the table's schema. To fix the incorrectly spelled Continent column, run the following command.
 
 ```SQL
 ALTER TABLE world.country RENAME COLUMN Conitinent TO Continent;
 ```
-[!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/alter_table.PNG)
+![img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/alter_table.PNG)
 
 19. To verify that the **Continent** column name in the **country** table has been corrected, run the following query.
 
@@ -184,7 +184,7 @@ ALTER TABLE world.country RENAME COLUMN Conitinent TO Continent;
 SHOW COLUMNS FROM world.country;
 ```
  
-[!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show_country_columns.PNG)
+![img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/show_country_columns.PNG)
 
 ### Challenge 1
 - Create a table named city and add two columns named Name and Region. Both columns should use the CHAR data type.
@@ -222,7 +222,7 @@ DROP DATABASE world;
 
 ```SHOW DATABASES;```
  
-[!img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/final.PNG)
+![img](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week7/images/final.PNG)
 Conclusion
  Congratulations! You now have successfully:
 
