@@ -1,10 +1,10 @@
 # 167-[ARCH]-KC – AWS Architecture
 
 1. Which resource provides a set of foundational questions that customers can use to understand if their architecture aligns with cloud best practices?
-[x] AWS Well-Architected Framework documents
-[ ] AWS Well-Architected Lenses
-[ ] AWS Well-Architected Tool
-[ ] Design document
+- [x] AWS Well-Architected Framework documents
+- [ ] AWS Well-Architected Lenses
+- [ ] AWS Well-Architected Tool
+- [ ] Design document
 
 2. Which AWS Well-Architected Framework pillar provides details about how to recover from failure and mitigate disruption?
 [ ] Operational Excellence
