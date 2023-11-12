@@ -63,85 +63,89 @@ You have successfully created a Systems Manager inventory association for your i
 
 # Task 2: Install a Custom Application using Run Command
 In this task, you install a custom web application (Widget Manufacturing Dashboard) by using Run Command, a capability of Systems Manager.
+![InstallApplication.png](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week8/images/InstallApplication.png)
 
 A virtual private cloud (VPC) with an EC2 instance inside. A user outside the AWS Cloud uses Run Command to install a widget manufacturing web application.
 
-In the preceding diagram, Systems Manager installs an application on an EC2 instance within a virtual private cloud (VPC). It is installed by using Run Command. Run Command will run the "install script" and install the following: Apache web server, PHP, AWS SDK, and the web application. Once everything is installed, it also starts the web server.
+*In the preceding diagram, Systems Manager installs an application on an EC2 instance within a virtual private cloud (VPC). It is installed by using Run Command. Run Command will run the "install script" and install the following: Apache web server, PHP, AWS SDK, and the web application. Once everything is installed, it also starts the web server.
+*
 
-In the upper-left corner, expand the menu icon. For Node Management, choose Run Command.
+12. In the upper-left corner, expand the menu icon. For Node Management, choose Run Command.
 
-Choose Run command
+13. Choose ``Run command``
 
 A list appears of pre-configured documents for running common commands. 
 
-Choose the search icon  in the box, and a dropdown box appears. Choose the following options: 
+14. Choose the search icon  in the box, and a dropdown box appears. Choose the following options: 
 
-Owner
-Owned by me
+	- Owner
+	- Owned by me
 A document appears.
 
-Note: Do not enter Owner or Owned by me. Entering this text does not return results. 
+**Note:** Do not enter Owner or Owned by me. Entering this text does not return results. 
 
-If the document is not already selected, select the button for the document.
+15. If the document is not already selected, select the button for the document.
 
-The following information appears for this document:
+16. The following information appears for this document:
 
-Description Install Dashboard App
-Document version: 1 (Default) 
-Leave the Document version option set to this default. 
+	- **Description Install Dashboard App**
+	- **Document version: 1 (Default)**
+Leave the **Document version** option set to this default. 
 
-For Target selection, select Choose instances manually.
+17. For **Target selection**, select **Choose instances manually**.
 
-In the Instances section, select Managed Instance.
+18. In the **Instances** section, select **Managed Instance**.
 
-The Managed Instance has the Systems Manager agent installed. The agent has registered the instance to the service, which allows it to be selected for Run Command.
+The **Managed Instance** has the Systems Manager agent installed. The agent has registered the instance to the service, which allows it to be selected for Run Command.
 
- It is also possible to identify target instances by using tags. By using tags, you can run a single command on a whole fleet of matching instances.
+	- It is also possible to identify target instances by using tags. By using tags, you can run a single command on a whole fleet of matching instances.
 
-In the Output options section, clear Enable an S3 bucket.
+19. In the **Output options** section, clear **Enable an S3 bucket**.
 
-Expand the AWS command line interface command section.
+20. Expand the **AWS command line interface command** section.
 
- This section displays the command line interface (CLI) command that initiates Run Command. You can copy this command and use it in the future within a script rather than having to use the AWS Management Console.
+	- This section displays the command line interface (CLI) command that initiates Run Command. You can copy this command and use it in the future within a script rather than having to use the AWS Management Console.
 
-Choose Run
+21. Choose ``Run``
 
- A banner with the Command ID indicates that it was successfully sent on the Command ID page.
+ A banner with the **Command ID** indicates that it was successfully sent on the Command ID page.
 
-After 1–2 minutes, the Overall status should change to Success. If it doesn't, choose the  refresh icon to update the status.
+22. After 1–2 minutes, the ``Overall status`` should change to ``Success``. If it doesn't, choose the  refresh icon to update the status.
 
  You now validate the custom application that was installed.
 
-In the Vocareum console, choose the following options: 
+23. In the Vocareum console, choose the following options: 
 
-Choose the Details dropdown list at the top of these instructions.
-Choose Show
-Copy the ServerIP value. (This value is the public IP address.)
-Open a new web browser tab, paste the IP address that you copied, and press Enter.
+	- Choose the Details dropdown list at the top of these instructions.
+	- Choose Show
+	- Copy the ServerIP value. (This value is the public IP address.)
+24. Open a new web browser tab, paste the IP address that you copied, and press Enter.
 
- The Widget Manufacturing Dashboard that you installed appears.
+ The **Widget Manufacturing Dashboard** that you installed appears.
 
 You have successfully used Run Command through Systems Manager to install a custom application onto your instance without needing to remotely access the instance by using SSH.
 
-Task 3: Use Parameter Store to manage application settings
+# Task 3: Use Parameter Store to manage application settings
+
 Parameter Store, a capability of Systems Manager, provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database strings, and license codes as parameter values. You can store values as plain text or encrypted data. You can then reference values by using the unique name that you specified when you created the parameter.
+
 
 In this task, you use Parameter Store to store a parameter that you use to activate a feature in an application.
 
-Keep the Widget Manufacturing Dashboard browser tab open, and return to the AWS Systems Manager tab.
+25. Keep the **Widget Manufacturing Dashboard** browser tab open, and return to the AWS Systems Manager tab.
 
-In the left navigation pane, for Application Management, choose Parameter Store.
+26. In the left navigation pane, for **Application Management**, choose Parameter Store.
 
-Choose Create parameter
+27. Choose ``Create parameter``
 
-Choose the following options:
+28. Choose the following options:
 
-For Name:, enter /dashboard/show-beta-features
-For Description: , enter Display beta features
-For Tier:, leave the default option. 
-For Type:, leave the default option. 
-For Value:, enter True
-Choose Create parameter
+	- For ``Name:``, enter /dashboard/show-beta-features
+	- For ``Description:`` , enter Display beta features
+	- For ``Tier:``, leave the default option. 
+	- For ``Type:``, leave the default option. 
+	- For ``Value:``, enter True
+29. Choose ``Create parameter``
 
 A banner with the message "Create parameter request succeeded" appears at the top of the page. 
 
@@ -149,18 +153,21 @@ The parameter can be specified as a hierarchical path, such as /dashboard/<optio
 
 The application that is running on Amazon EC2 automatically checks for this parameter. If it finds this existing parameter, then additional features are displayed.
 
-Return to the web browser tab that displays the application, and refresh the web page.
+30. Return to the web browser tab that displays the application, and refresh the web page.
 
  If you accidentally closed this browser tab, choose the Details dropdown list at the top of these instructions, choose Show and then copy and paste the ServerIP value into a new browser tab. 
 
 Notice that three charts are displayed. The application is now checking Parameter Store to determine whether the additional chart (which is still in beta) should be displayed. It is common to configure applications to display "dark features" that are installed but not yet activated.
 
-Optional: Delete the parameter, and then refresh the browser tab with the application. The third chart disappears again.
+**Optional**: Delete the parameter, and then refresh the browser tab with the application. The third chart disappears again.
 
-Task 4: Use Session Manager to access instances
+# Task 4: Use Session Manager to access instances
+
 With Session Manager, a capability of Systems Manager, you can manage your EC2 instances through an interactive one-step browser-based shell or through the AWS Command Line Interface (AWS CLI). Session Manager provides secure and auditable instance management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. You can also use Session Manager to help comply with corporate policies that require controlled access to instances, strict security practices, and fully auditable logs with instance access details while still providing end users with one-step cross-platform access to your EC2 instances.
 
 When you use Session Manager with Microsoft Windows, Session Manager provides access to a PowerShell console on the instance.
+
+- ![accessInstances](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week8/images/AccessInstances.png)
 
 A VPC with an EC2 instance inside. A user outside the AWS Cloud uses Systems Manager and Session Manager to access the EC2 instance.
 
@@ -168,50 +175,54 @@ In the preceding diagram, Systems Manager uses Session Manager to access the EC2
 
 In this task, you access the EC2 instance through Session Manager.
 
-In the left navigation pane, for Node Management, choose Session Manager.
+31. In the left navigation pane, for Node Management, choose Session Manager.
 
-Choose Start session
+32. Choose ``Start session``
 
-Select Managed Instance.
+33. Select **Managed Instance.**
 
-Choose Start session
+34. Choose ``Start session``
 
 A new session tab opens in your browser.
 
-To activate the cursor, choose anywhere in the session window.
+35. To activate the cursor, choose anywhere in the session window.
 
-Run the following command in the session window:
+36. Run the following command in the session window:
 
-ls /var/www/html
+``ls /var/www/html``
 The output lists the application files that were installed on the instance.
 
-Run the following command in the session window:
+37. Run the following command in the session window:
 
+```bash
 # Get region
 AZ=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone`
 export AWS_DEFAULT_REGION=${AZ::-1}
 
 # List information about EC2 instances
 aws ec2 describe-instances
+```
+
 The output lists the EC2 instance details for the Managed Instance in JSON format.
 
 This task demonstrates how you can use Session Manager to log in to an instance without using SSH. You can also verify this capability by confirming that the SSH port is closed for the instance's security group.
 
 You can restrict access to Session Manager through AWS Identity and Access Management (IAM) policies, and AWS CloudTrail logs Session Manager usage. These options provide better security and auditing than traditional SSH access.
 
-Conclusion
+# Conclusion
 Congratulations! You now have successfully done the following:
 
-Verified configurations and permissions
-Run tasks on multiple servers
-Updated application settings or configurations
-Accessed the command line on an instance
-Lab complete
-At the top of this page, choose End Lab and then choose Yes to confirm that you want to end the lab.  
+- Verified configurations and permissions
+- Run tasks on multiple servers
+- Updated application settings or configurations
+- Accessed the command line on an instance
+
+# Lab complete
+38. At the top of this page, choose End Lab and then choose Yes to confirm that you want to end the lab.  
 
 A panel appears indicating that "You may close this message box now. Lab resources are terminating."
 
-To close the End Lab panel, choose the X in the upper-right corner.
+39. To close the **End Lab** panel, choose the X in the upper-right corner.
 
 ## Additional resources
 - [What is AWS Systems Manager?](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)
