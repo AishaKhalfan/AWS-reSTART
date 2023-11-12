@@ -10,7 +10,7 @@ In this activity, you install and configure the AWS CLI on a Red Hat Linux insta
 During this activity, you establish a Secure Shell (SSH) connection to the instance. You configure the installation with an access key that can connect to an AWS account. Finally, you practice using the AWS CLI to interact with AWS Identity and Access Management (IAM).
 
 When you finish the activity, it will reflect the following diagram:
-![ARCHI-DIAGRAM](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week8/archi_diagram.png)
+![ARCHI-DIAGRAM](https://github.com/AishaKhalfan/AWS-reSTART/blob/main/week8/images/archi_diagram.png)
 
 A virtual private cloud (VPC) that contains a Red Hat EC2 instance. The AWS CLI is shown inside the instance and is configured with IAM. You access this instance this instance through an SSH connection.
 
