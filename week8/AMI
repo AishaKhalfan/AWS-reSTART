@@ -1,0 +1,12 @@
+ami-094a0fafc1bf73bd6
+subnet-0fbcea08528ef9f0b
+sg-0deb8f245b6a9b36a
+
+i-0113b6612dc107e21
+
+
+ec2-34-222-232-159.us-west-2.compute.amazonaws.com
+
+## challenge 2: in webserver
+sudo service httpd status
+sudo service httpd start

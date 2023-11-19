@@ -1,0 +1,11 @@
+#!/bin/bash
+# Install Apache Web Server
+yum install -y httpd
+
+# Turn on web server
+systemctl enable httpd.service
+systemctl start  httpd.service
+
+# Download App files
+wget https://aws-tc-largeobjects.s3.amazonaws.com/CUR-TF-100-RESTRT-1/171-lab-%5BJAWS%5D-create-ec2/dashboard-app.zip
+unzip dashboard-app.zip -d /var/www/html/
